@@ -1,12 +1,14 @@
 \documentclass{report}
-%\usepackage[utf8]{inputenc}
-%\RequirePackage[numbers]{natbib}
-%\usepackage[intoc,french]{nomencl}
-%\makenomenclature
-%\renewcommand{\nomname}{Notations}
-%\usepackage{etoolbox}
-%\usepackage{subcaption}
+\usepackage[utf8]{inputenc}
+\RequirePackage[numbers]{natbib}
+\usepackage[intoc,french]{nomencl}
+\makenomenclature
+\renewcommand{\nomname}{Notations}
+\usepackage{etoolbox}
+\usepackage{subcaption}
+\usepackage{graphicx}
 
+\title{Spécification d'histogrammes dans le cas de zones constantes}
 \author{Pierre Dubreuil, Thomas Eboli}
 
 \begin{document}
@@ -21,6 +23,34 @@ Ce document est organisé comme suit: la partie 1 est dédiée à présenter le 
 
 \section*{Présentation du problème de "large pixels"}
 
+\begin{figure}
+\centering
+\begin{minipage}[width=0.5\textwidth]
+\centering
+\includegraphics[width=0.75\textwidth]{images/im_x.jpg}
+\end{minipage}%
+\begin{minipage}[width=0.5\textwidth]
+\centering
+\includegraphics[width=0.75\textwidth]{images/hist_x.jpg}
+\end{minipage}
+\caption{Image de départ et son histogramme}
+\label{fig:im_x}
+\end{figure}
+
+\begin{figure}
+\centering
+\begin{minipage}{width=0.5\textwidth}
+\centering
+\includegraphics[width=0.75\textwidth]{images/im_xx.jpg}
+\end{minipage}%
+\begin{minipage}{width=0.5\textwidth}
+\centering
+\includegraphics[width=0.75\textwidth]{images/hist_xx.jpg}
+\end{minipage}
+\caption{Image améliorée obtenue grâce au tri par la procédure order}
+\label{fig:im_xx}
+\end{figure}
+
 \section*{Résolution par ajout de bruit}
 \subsection*{Approche probabiliste}
 \paragraph*{}
@@ -30,5 +60,5 @@ Comme annoncé dans l'introduction, nous sommes partis du constat qu'une image e
 \newline
 \paragraph{Théorème 1:} Soient $x$ et $y$ les réalisations de deux variables aléatoires $X$ et $Y$ de densités respectives $f_x$ et $f_y$. Alors $x+y$ est aussi une variable aléatoire suivant la loi $X+Y$ et de densité $f_x * f_y$.
 \subparagraph{} Toutes les considérations suivantes seront prises sur des images en niveaux de gris. Pour appliquer les résultats à des images couleurs, il suffit d'appliquer les calculs à chacun des canaux. On considérant maintenant que $x$ est notre image et en notant $b$ le bruit (gaussien, uniforme, peu importe), on obtient que l'image $x_b = x+b$ possède un histogramme qui s'écrit $h_x * h_b$. On peut donc maintenant jouer sur le type de bruit et son écart-type $\sigma$ pour modifier l'allure de l'histogramme  de $x$ et donc modifier en aval le contraste de manière plus fine.
-\subparagraph*{} Théoriquement, on arrive alors a moyenner l'histogramme de x. On définit la valeur d'un bin $h_x_b(i)$ pour $i \in {0,...,255}$ comme une fonction de de $h_x(i)$ mais aussi de ses voisins. On force donc l'histogramme avoir des valeurs plus faibles aux endroits où il n'y avait pas de pixels au départ ce qui réduit l'apparition de motifs invisible au début et qui deviennent visibles par la suite. Le choix du type de bruit à appliquer définit donc le type de moyenne qu'on utilise. Par exemple un bruit uniforme appliquera une moyenne classique aux bins de l'histogramme de $x$.
+\subparagraph*{} Théoriquement, on arrive alors a moyenner l'histogramme de x. On définit la valeur d'un bin $h_{x_b}(i)$ pour $i \in {0,...,255}$ comme une fonction de de $h_x(i)$ mais aussi de ses voisins. On force donc l'histogramme avoir des valeurs plus faibles aux endroits où il n'y avait pas de pixels au départ ce qui réduit l'apparition de motifs invisible au début et qui deviennent visibles par la suite. Le choix du type de bruit à appliquer définit donc le type de moyenne qu'on utilise. Par exemple un bruit uniforme appliquera une moyenne classique aux bins de l'histogramme de $x$.
 \end{document}
