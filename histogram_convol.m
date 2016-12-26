@@ -1,6 +1,6 @@
 close all; clear all; clc
 
-name='Malta';
+name='book';
 
 xo = readimage(name);
 figure; im(xo)
@@ -11,11 +11,14 @@ h=hist(I(:),256); h=h/numel(I);
 figure;
 bar([0:1:255],h);xlim([0,255])
 
+
+%%
 L=0.2; R=0.2; 
 idx = order(I);
 
 H = hsGauss(L,R); 
 [m,n]= size(I);
+figure; plot(H); axis('tight')
 
 [fx,Hx]=HistGrayMatch(H, m, n, idx); 
 figure;im(fx);  % ARTIFACTS IN THE SKY !!!
@@ -24,7 +27,6 @@ x = chm_mult(xo,fx) ;figure;  im(x)
 h=hist(x(:),256); h=h/numel(x);
 figure;
 bar([0:1:255],h);xlim([0,255])
-
 %% gaussienne : sigma = 1
 b = 1*randn(size(x));
 xx = x + b;

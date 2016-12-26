@@ -61,22 +61,243 @@ bar([0:1:255],h);xlim([0,255])
 L=0.2; R=0.2; 
 idx = order(I);
 
+
 H = hsGauss(L,R); 
+figure; plot(H); axis('tight')
 [m,n]= size(I);
 
 [fx,Hx]=HistGrayMatch(H, m, n, idx); 
 figure;im(fx);  % ARTIFACTS IN THE SKY !!!
 x = chm_mult(xo,fx) ;figure;  im(x)
 
-b = 5*randn(size(x));
-xx = x + b;
+%%
+clear; close all
+name='birds';
 
-h=hist(x(:),256); h=h/numel(x);
+xo = readimage(name);
+figure; im(xo)
+Io=sum(xo,3)/3;
+I=stretch(Io) ;
+% nomalized histogram of I
+h=hist(I(:),256); h=h/numel(I);
 figure;
 bar([0:1:255],h);xlim([0,255])
 
-h=hist(xx(:),256); h=h/numel(xx);
+L=0.05; R=0.2; 
+idx = order(I);
+
+H = hsGauss(L,R); 
+[m,n]= size(I);
+figure; plot(H); axis('tight')
+
+[fx,Hx]=HistGrayMatch(H, m, n, idx); 
+figure;im(fx);  
+x = chm_mult(xo,fx) ;figure;  im(x)
+
+%%
+clear; close all
+name='book';
+
+xo = readimage(name);
+figure; im(xo)
+Io=sum(xo,3)/3;
+I=stretch(Io) ;
+% nomalized histogram of I
+h=hist(I(:),256); h=h/numel(I);
 figure;
 bar([0:1:255],h);xlim([0,255])
 
-figure; im(xx);
+L=1; R=0.05; 
+idx = order(I);
+
+H = hsGauss(L,R); 
+[m,n]= size(I);
+figure; plot(H); axis('tight')
+
+[fx,Hx]=HistGrayMatch(H, m, n, idx); 
+figure;im(fx);  
+x = chm_mult(xo,fx) ;figure;  im(x)
+
+%%
+clear; close all
+name='brasil';
+
+xo = readimage(name);
+figure; im(xo)
+Io=sum(xo,3)/3;
+I=stretch(Io) ;
+% nomalized histogram of I
+h=hist(I(:),256); h=h/numel(I);
+figure;
+bar([0:1:255],h);xlim([0,255])
+
+L=0.2; R=0.2; 
+idx = order(I);
+
+H = hsGauss(L,R); 
+[m,n]= size(I);
+
+[fx,Hx]=HistGrayMatch(H, m, n, idx); 
+figure;im(fx);  
+x = chm_mult(xo,fx) ;figure;  im(x)
+
+%%
+clear; close all
+name='cath';
+
+xo = readimage(name);
+figure; im(xo)
+Io=sum(xo,3)/3;
+I=stretch(Io) ;
+% nomalized histogram of I
+h=hist(I(:),256); h=h/numel(I);
+figure;
+bar([0:1:255],h);xlim([0,255])
+
+L=0.2; R=0.2; 
+idx = order(I);
+
+H = hsGauss(L,R); 
+[m,n]= size(I);
+
+[fx,Hx]=HistGrayMatch(H, m, n, idx); 
+figure;im(fx);  
+x = chm_mult(xo,fx) ;figure;  im(x)
+
+%%
+clear; close all
+name='ferraribmp';
+
+xo = readimage(name);
+figure; im(xo)
+Io=sum(xo,3)/3;
+I=stretch(Io) ;
+% nomalized histogram of I
+h=hist(I(:),256); h=h/numel(I);
+figure;
+bar([0:1:255],h);xlim([0,255])
+
+L=0.2; R=0.2; 
+idx = order(I);
+
+H = hsGauss(L,R); 
+[m,n]= size(I);
+
+[fx,Hx]=HistGrayMatch(H, m, n, idx); 
+figure;im(fx);  
+x = chm_mult(xo,fx) ;figure;  im(x)
+
+%%
+clear; close all
+name='jeriT';
+
+xo = readimage(name);
+figure; im(xo)
+Io=sum(xo,3)/3;
+I=stretch(Io) ;
+% nomalized histogram of I
+h=hist(I(:),256); h=h/numel(I);
+figure;
+bar([0:1:255],h);xlim([0,255])
+
+L=0.2; R=0.2; 
+idx = order(I);
+
+H = hsGauss(L,R); 
+[m,n]= size(I);
+
+[fx,Hx]=HistGrayMatch(H, m, n, idx); 
+figure;im(fx);  
+x = chm_mult(xo,fx) ;figure;  im(x)
+
+%%
+clear; close all
+name='LA';
+
+xo = readimage(name);
+figure; im(xo)
+Io=sum(xo,3)/3;
+I=stretch(Io) ;
+% nomalized histogram of I
+h=hist(I(:),256); h=h/numel(I);
+figure;
+bar([0:1:255],h);xlim([0,255])
+
+L=0.2; R=0.2; 
+idx = order(I);
+
+H = hsGauss(L,R); 
+[m,n]= size(I);
+
+[fx,Hx]=HistGrayMatch(H, m, n, idx); 
+figure;im(fx);  
+x = chm_mult(xo,fx) ;figure;  im(x)
+
+%%
+clear; close all
+name='Macau';
+
+xo = readimage(name);
+figure; im(xo)
+Io=sum(xo,3)/3;
+I=stretch(Io) ;
+% nomalized histogram of I
+h=hist(I(:),256); h=h/numel(I);
+figure;
+bar([0:1:255],h);xlim([0,255])
+
+L=0.2; R=0.2; 
+idx = order(I);
+
+H = hsGauss(L,R); 
+[m,n]= size(I);
+
+[fx,Hx]=HistGrayMatch(H, m, n, idx); 
+figure;im(fx);  
+x = chm_mult(xo,fx) ;figure;  im(x)
+
+%%
+clear; close all
+name='PalaceBJ';
+
+xo = readimage(name);
+figure; im(xo)
+Io=sum(xo,3)/3;
+I=stretch(Io) ;
+% nomalized histogram of I
+h=hist(I(:),256); h=h/numel(I);
+figure;
+bar([0:1:255],h);xlim([0,255])
+
+L=0.2; R=0.2; 
+idx = order(I);
+
+H = hsGauss(L,R); 
+[m,n]= size(I);
+
+[fx,Hx]=HistGrayMatch(H, m, n, idx); 
+figure;im(fx);  
+x = chm_mult(xo,fx) ;figure;  im(x)
+
+%%
+clear; close all
+name='brasil';
+
+xo = readimage(name);
+figure; im(xo)
+Io=sum(xo,3)/3;
+I=stretch(Io) ;
+% nomalized histogram of I
+h=hist(I(:),256); h=h/numel(I);
+figure;
+bar([0:1:255],h);xlim([0,255])
+
+L=0.2; R=0.2; 
+idx = order(I);
+
+H = hsGauss(L,R); 
+[m,n]= size(I);
+
+[fx,Hx]=HistGrayMatch(H, m, n, idx); 
+figure;im(fx);  
+x = chm_mult(xo,fx) ;figure;  im(x)
