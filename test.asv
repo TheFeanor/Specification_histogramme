@@ -1,0 +1,36 @@
+%%
+clear; close all
+name='birds';
+
+xo = readimage(name);
+figure; im(xo)
+Io=sum(xo,3)/3;
+I=stretch(Io) ;
+% nomalized histogram of I
+h=hist(I(:),256); h=h/numel(I);
+%figure;
+%bar([0:1:255],h);xlim([0,255])
+
+L=0.005; R=0.5; 
+idx = order(I);
+
+H = hsGauss(L,R); 
+[m,n]= size(I);
+figure; bar([0:1:255],h);xlim([0,255])
+hold on; plot(H/sum(H)); axis('tight')
+
+[fx,Hx]=HistGrayMatch(H, m, n, idx); 
+figure;im(fx);  
+x = chm_mult(xo,fx) ;figure;  im(x)
+
+figure;
+plot(cumsum(h));
+hold on;
+plot(cumsum(H/sum(H)), 'g');
+
+%%
+x = 0:255;
+g1 = exp(-(x-204).*(x-204)/(2*7^2));
+g2 = exp(-(x-15).*(x-15)/(2*3^2));
+
+figure;plot(0.75*g1);hold on; plot(0.25*g2, 'r')

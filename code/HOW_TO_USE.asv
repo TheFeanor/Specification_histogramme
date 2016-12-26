@@ -14,10 +14,9 @@ Io=sum(xo,3)/3; im(Io);
 I=stretch(Io) ;
 
 % nomalized histogram of I
-% h=hist(I(:),256); h=h/numel(I);
-% figure;
-% bar([0:1:255],h);xlim([0,255]);
-
+h=hist(I(:),256); h=h/numel(I);
+figure;
+bar([0:1:255],h);xlim([0,255])
 
 % order the pixel values using minimization code fixedLogs4sortIt
 idx = order(I);
@@ -25,11 +24,7 @@ idx = order(I);
 % target histogram 
 L=1; R=0.05 ;
 H = hsGauss(L,R); 
-figure; 
-h=hist(I(:),256); h=h/numel(I);
-figure;
-bar([0:1:255],h);xlim([0,255]);
-hold on; plot(H/sum(H)); axis('tight')
+figure; plot(H); axis('tight')
 
 [m,n]= size(I);
 
@@ -50,11 +45,12 @@ bar([0:1:255],h);xlim([0,255])
 
 % FOR SOME IMAGES WITH LARGE PIXELS RESULTS ARE BAD
 
+%%
 plot(cumsum(h));
 hold on;
-plot(cumsum(H/sum(H)), 'g');
+plot(H, 'g');
 %% 
-%clear; close all
+clear; close all
 name='Malta';
 
 xo = readimage(name);
@@ -63,27 +59,20 @@ Io=sum(xo,3)/3;
 I=stretch(Io) ;
 % nomalized histogram of I
 h=hist(I(:),256); h=h/numel(I);
+figure;
+bar([0:1:255],h);xlim([0,255])
 
-
-L=0.2; R=0.5; 
+L=0.2; R=0.2; 
 idx = order(I);
 
 
 H = hsGauss(L,R); 
-figure;
-bar([0:1:255],h);xlim([0,255]);hold on; plot(H/sum(H)); axis('tight')
+figure; plot(H); axis('tight')
 [m,n]= size(I);
 
 [fx,Hx]=HistGrayMatch(H, m, n, idx); 
 figure;im(fx);  % ARTIFACTS IN THE SKY !!!
 x = chm_mult(xo,fx) ;figure;  im(x)
-
-figure;
-plot(cumsum(Hx)/sum(Hx));
-hold on;
-plot(cumsum(H/sum(H)), 'g');
-hold on;
-plot(cumsum(h));
 
 %%
 clear; close all
@@ -98,22 +87,16 @@ h=hist(I(:),256); h=h/numel(I);
 figure;
 bar([0:1:255],h);xlim([0,255])
 
-L=0.2; R=0.5; 
+L=0.05; R=0.2; 
 idx = order(I);
 
 H = hsGauss(L,R); 
 [m,n]= size(I);
-figure; figure;
-bar([0:1:255],h);xlim([0,255]); hold on; plot(H/sum(H)); axis('tight')
+figure; plot(H); axis('tight')
 
 [fx,Hx]=HistGrayMatch(H, m, n, idx); 
 figure;im(fx);  
 x = chm_mult(xo,fx) ;figure;  im(x)
-
-figure;
-plot(cumsum(h));
-hold on;
-plot(cumsum(H/sum(H)), 'g');
 
 %%
 clear; close all
@@ -128,7 +111,7 @@ h=hist(I(:),256); h=h/numel(I);
 figure;
 bar([0:1:255],h);xlim([0,255])
 
-L=1; R=0.005; 
+L=1; R=0.05; 
 idx = order(I);
 
 H = hsGauss(L,R); 
@@ -138,11 +121,6 @@ figure; plot(H); axis('tight')
 [fx,Hx]=HistGrayMatch(H, m, n, idx); 
 figure;im(fx);  
 x = chm_mult(xo,fx) ;figure;  im(x)
-
-figure;
-plot(cumsum(h));
-hold on;
-plot(cumsum(H/sum(H)), 'g');
 
 %%
 clear; close all
@@ -166,11 +144,6 @@ H = hsGauss(L,R);
 [fx,Hx]=HistGrayMatch(H, m, n, idx); 
 figure;im(fx);  
 x = chm_mult(xo,fx) ;figure;  im(x)
-
-figure;
-plot(cumsum(h));
-hold on;
-plot(cumsum(H/sum(H)), 'g');
 
 %%
 clear; close all
@@ -195,11 +168,6 @@ H = hsGauss(L,R);
 figure;im(fx);  
 x = chm_mult(xo,fx) ;figure;  im(x)
 
-figure;
-plot(cumsum(h));
-hold on;
-plot(cumsum(H/sum(H)), 'g');
-
 %%
 clear; close all
 name='ferraribmp';
@@ -222,11 +190,6 @@ H = hsGauss(L,R);
 [fx,Hx]=HistGrayMatch(H, m, n, idx); 
 figure;im(fx);  
 x = chm_mult(xo,fx) ;figure;  im(x)
-
-figure;
-plot(cumsum(h));
-hold on;
-plot(cumsum(H/sum(H)), 'g');
 
 %%
 clear; close all
@@ -251,11 +214,6 @@ H = hsGauss(L,R);
 figure;im(fx);  
 x = chm_mult(xo,fx) ;figure;  im(x)
 
-figure;
-plot(cumsum(h));
-hold on;
-plot(cumsum(H/sum(H)), 'g');
-
 %%
 clear; close all
 name='LA';
@@ -278,11 +236,6 @@ H = hsGauss(L,R);
 [fx,Hx]=HistGrayMatch(H, m, n, idx); 
 figure;im(fx);  
 x = chm_mult(xo,fx) ;figure;  im(x)
-
-figure;
-plot(cumsum(h));
-hold on;
-plot(cumsum(H/sum(H)), 'g');
 
 %%
 clear; close all
@@ -307,11 +260,6 @@ H = hsGauss(L,R);
 figure;im(fx);  
 x = chm_mult(xo,fx) ;figure;  im(x)
 
-figure;
-plot(cumsum(h));
-hold on;
-plot(cumsum(H/sum(H)), 'g');
-
 %%
 clear; close all
 name='PalaceBJ';
@@ -335,11 +283,6 @@ H = hsGauss(L,R);
 figure;im(fx);  
 x = chm_mult(xo,fx) ;figure;  im(x)
 
-figure;
-plot(cumsum(h));
-hold on;
-plot(cumsum(H/sum(H)), 'g');
-
 %%
 clear; close all
 name='brasil';
@@ -362,8 +305,3 @@ H = hsGauss(L,R);
 [fx,Hx]=HistGrayMatch(H, m, n, idx); 
 figure;im(fx);  
 x = chm_mult(xo,fx) ;figure;  im(x)
-
-figure;
-plot(cumsum(h));
-hold on;
-plot(cumsum(H/sum(H)), 'g');

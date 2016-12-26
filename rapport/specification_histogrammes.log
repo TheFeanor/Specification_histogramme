@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.24)  26 DEC 2016 17:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.24)  26 DEC 2016 23:15
 entering extended mode
 **./specification_histogrammes.tex
 (specification_histogrammes.tex
@@ -706,36 +706,126 @@ Package pdftex.def Info: images/hist_xx.jpg used on input line 73.
 File: images/p2_tilling.jpg Graphic file (type jpg)
 
 <use images/p2_tilling.jpg>
-Package pdftex.def Info: images/p2_tilling.jpg used on input line 87.
+Package pdftex.def Info: images/p2_tilling.jpg used on input line 88.
 (pdftex.def)             Requested size: 421.57397pt x 316.18047pt.
  [2 <../pictures/brasil.jpg> <./images/p1_brasil.jpg> <./images/im_x.jpg> <./im
 ages/im_xx.jpg>] [3 <./images/hist_x.jpg> <./images/p1_hist_cible_malte.jpg> <.
 /images/hist_xx.jpg>] [4 <./images/p2_tilling.jpg>]
-[5] (specification_histogrammes.aux) ) 
+<../pictures/bungalow.png, id=35, 1027.84pt x 662.475pt>
+File: ../pictures/bungalow.png Graphic file (type png)
+
+<use ../pictures/bungalow.png>
+Package pdftex.def Info: ../pictures/bungalow.png used on input line 123.
+(pdftex.def)             Requested size: 192.6874pt x 124.19354pt.
+
+<images/p3_bungalow_xx.jpg, id=36, 562.1pt x 421.575pt>
+File: images/p3_bungalow_xx.jpg Graphic file (type jpg)
+
+<use images/p3_bungalow_xx.jpg>
+Package pdftex.def Info: images/p3_bungalow_xx.jpg used on input line 127.
+(pdftex.def)             Requested size: 245.23607pt x 183.92398pt.
+
+<../pictures/malta.jpg, id=37, 963.6pt x 722.7pt>
+File: ../pictures/malta.jpg Graphic file (type jpg)
+ <use ../pictures/malta.jpg>
+Package pdftex.def Info: ../pictures/malta.jpg used on input line 137.
+(pdftex.def)             Requested size: 127.17438pt x 95.37683pt.
+File: images/im_xx.jpg Graphic file (type jpg)
+
+<use images/im_xx.jpg>
+Package pdftex.def Info: images/im_xx.jpg used on input line 141.
+(pdftex.def)             Requested size: 161.8567pt x 121.39163pt.
+ <images/p3_malta_xx.jpg, id=38, 562.1pt x 421.575pt>
+File: images/p3_malta_xx.jpg Graphic file (type jpg)
+
+<use images/p3_malta_xx.jpg>
+Package pdftex.def Info: images/p3_malta_xx.jpg used on input line 145.
+(pdftex.def)             Requested size: 161.8567pt x 121.39163pt.
+
+<images/p3_bungalow_hist.jpg, id=39, 562.1pt x 421.575pt>
+File: images/p3_bungalow_hist.jpg Graphic file (type jpg)
+
+<use images/p3_bungalow_hist.jpg>
+Package pdftex.def Info: images/p3_bungalow_hist.jpg used on input line 155.
+(pdftex.def)             Requested size: 122.61803pt x 91.96199pt.
+
+<images/p3_bungalow_cumsum.jpg, id=40, 562.1pt x 421.575pt>
+File: images/p3_bungalow_cumsum.jpg Graphic file (type jpg)
+
+<use images/p3_bungalow_cumsum.jpg>
+Package pdftex.def Info: images/p3_bungalow_cumsum.jpg used on input line 159.
+(pdftex.def)             Requested size: 122.61803pt x 91.96199pt.
+
+<images/p3_malta_hist.jpg, id=41, 562.1pt x 421.575pt>
+File: images/p3_malta_hist.jpg Graphic file (type jpg)
+
+<use images/p3_malta_hist.jpg>
+Package pdftex.def Info: images/p3_malta_hist.jpg used on input line 163.
+(pdftex.def)             Requested size: 122.61803pt x 91.96199pt.
+
+<images/p3_malta_cumsum.jpg, id=42, 562.1pt x 421.575pt>
+File: images/p3_malta_cumsum.jpg Graphic file (type jpg)
+
+<use images/p3_malta_cumsum.jpg>
+Package pdftex.def Info: images/p3_malta_cumsum.jpg used on input line 167.
+(pdftex.def)             Requested size: 122.61803pt x 91.96199pt.
+
+<../pictures/birds.jpg, id=43, 2280.52pt x 1710.39pt>
+File: ../pictures/birds.jpg Graphic file (type jpg)
+
+<use ../pictures/birds.jpg>
+Package pdftex.def Info: ../pictures/birds.jpg used on input line 182.
+(pdftex.def)             Requested size: 96.34369pt x 72.24042pt.
+
+<images/p3_birds_xx.jpg, id=44, 562.1pt x 421.575pt>
+File: images/p3_birds_xx.jpg Graphic file (type jpg)
+
+<use images/p3_birds_xx.jpg>
+Package pdftex.def Info: images/p3_birds_xx.jpg used on input line 186.
+(pdftex.def)             Requested size: 122.61803pt x 91.96199pt.
+
+<images/p3_birds_hist.jpg, id=45, 562.1pt x 421.575pt>
+File: images/p3_birds_hist.jpg Graphic file (type jpg)
+
+<use images/p3_birds_hist.jpg>
+Package pdftex.def Info: images/p3_birds_hist.jpg used on input line 190.
+(pdftex.def)             Requested size: 122.61803pt x 91.96199pt.
+
+<images/p3_birds_cumsum.jpg, id=46, 562.1pt x 421.575pt>
+File: images/p3_birds_cumsum.jpg Graphic file (type jpg)
+
+<use images/p3_birds_cumsum.jpg>
+Package pdftex.def Info: images/p3_birds_cumsum.jpg used on input line 194.
+(pdftex.def)             Requested size: 122.61803pt x 91.96199pt.
+ [5 <../pictures/bungalow.png (PNG copy)> <./images/p3_bungalow_xx.jpg>] [6 <..
+/pictures/malta.jpg> <./images/p3_malta_xx.jpg> <./images/p3_bungalow_hist.jpg>
+ <./images/p3_bungalow_cumsum.jpg> <./images/p3_malta_hist.jpg> <./images/p3_ma
+lta_cumsum.jpg> <../pictures/birds.jpg> <./images/p3_birds_xx.jpg> <./images/p3
+_birds_hist.jpg> <./images/p3_birds_cumsum.jpg>] (specification_histogrammes.au
+x) ) 
 Here is how much of TeX's memory you used:
- 5555 strings out of 493333
- 77430 string characters out of 3139196
- 150206 words of memory out of 3000000
- 8981 multiletter control sequences out of 15000+200000
+ 5620 strings out of 493333
+ 79070 string characters out of 3139196
+ 150238 words of memory out of 3000000
+ 9033 multiletter control sequences out of 15000+200000
  13702 words of font info for 53 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,7n,43p,1280b,306s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmbx9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.
-pfb>
-Output written on specification_histogrammes.pdf (5 pages, 1388041 bytes).
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmmi9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on specification_histogrammes.pdf (6 pages, 3815344 bytes).
 PDF statistics:
- 78 PDF objects out of 1000 (max. 8388607)
+ 93 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
 

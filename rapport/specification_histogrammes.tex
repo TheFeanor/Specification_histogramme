@@ -84,13 +84,14 @@ Dans cette section, nous souhaitons faire part des différentes approches que no
 Une première idée a été de vouloir traiter des bouts d'images indépendamment les uns des autres car le problème est souvent localisé dans certaines zones de l'image. Les approches par tilling et pyramides multi-échelles étant monnaie courante en traitement des image, nous avons voulu l'essayer dans notre problème. Malheureusement, qui dit tilling dit traitement séparé des informations ce qui ne nous arrange pas car nous voulons dispatcher l'ensemble des pixels de l'image et les réorganiser. Le résultat obtenu (sans utiliser d'algorithme type Midway qui aurait permis d'unifier les couleurs des différentes imagettes) n'est pas convaincant du tout car des zones claires et foncées apparaissent là où on le veut pas comme on peut le voir dans la figure \ref{fig:tilling} où les jonctions de chacune des imagettes pose problème. Cette figure a été obtenue avec une approche de type pyramide où chaque quart est la moyenne entre le quart de l'image de niveau 0 et l'imagette traitée à part au niveau 1 avec son propre histogramme (cf code dans le dossier "tilling").
 
 \begin{figure}
+\centering
 \includegraphics[scale=0.75]{images/p2_tilling.jpg}
 \caption{\textit{Sans même se donner la peine de traiter l'image par un algorithme type midway pour unifier les couleurs, on aperçoit dans l'image en haut à droite que le ciel est un dégradé qui ne prend pas en compte le ciel de l'imagette en haut à gauche. Pire encore, le phénomène de "large pixels" est encore plus accentué car on a encore moins de bits à allouer aux zones claires ! Même constat pour chacune des jonctions.}}
 \label{fig:tilling}
 \end{figure}
 
-\section*{Résolution par ajout de bruit}
-\subsection*{Approche probabiliste}
+\subsection*{Résolution par ajout de bruit}
+\subsubsection*{Approche probabiliste}
 \paragraph*{}
 La partie précédente met en évidence que le transport d'un histogramme d'une image réelle vers un histogramme cible ne peut se faire complètement ce qui laisse apparaître des défauts dans l'image générée à partir du nouvel histogramme obtenu.
 \subparagraph*{}
@@ -99,9 +100,9 @@ Comme annoncé dans l'introduction, nous sommes partis du constat qu'une image e
 \subparagraph{} Toutes les considérations suivantes seront prises sur des images en niveaux de gris. Pour appliquer les résultats à des images couleurs, il suffit d'appliquer les calculs à chacun des canaux. On considérant maintenant que $x$ est notre image et en notant $b$ le bruit (gaussien, uniforme, peu importe), on obtient que l'image $x_b = x+b$ possède un histogramme qui s'écrit $h_x * h_b$. On peut donc maintenant jouer sur le type de bruit et son écart-type $\sigma$ pour modifier l'allure de l'histogramme  de $x$ et donc modifier en aval le contraste de manière plus fine.
 \subparagraph*{} Théoriquement, on arrive alors a moyenner l'histogramme de x. On définit la valeur d'un bin $h_{x_b}(i)$ pour $i \in {0,...,255}$ comme une fonction de de $h_x(i)$ mais aussi de ses voisins. On force donc l'histogramme avoir des valeurs plus faibles aux endroits où il n'y avait pas de pixels au départ ce qui réduit l'apparition de motifs invisible au début et qui deviennent visibles par la suite. Le choix du type de bruit à appliquer définit donc le type de moyenne qu'on utilise. Par exemple un bruit uniforme appliquera une moyenne classique aux bins de l'histogramme de $x$.
 
-\subsection*{Résultats}
+\subsubsection*{Résultats}
 
-\section*{Méthodes de dithering plus récentes}
+\subsection*{Méthodes de dithering plus récentes}
 \paragraph*{}
 L'idée d'ajouter du bruit à l'image pour casser ces zones constantes n'est pas nouvelle et date du milieu des années 50. Entre temps, le domaine de la quantification des palettes de couleurs a connu un grand intérêt avec l'arrivée des écrans couleurs. La trame de Bayer est l'un des exemples les plus connus, permettant de coloriser par des hachures des images. Globalement cette technique fonctionne bien mais fait apparaître des artefacts dans les zones hautes-fréquences. Notre problème étant celui de traiter de coloriser des zones de teinte constante qui deviennent à teinte variable après application de l'algorithme. La littérature à ce sujet est assez riche et plusieurs algorithmes sont disponibles comme celui de Floyd et Steinberg de 1975. Nous avons choisi l'algorithme d'Atkinson datant des années 80 qui repose sur la technique de Floyd et Steinberg mais est plus rapide et donne de meilleurs résultats.
 \subparagraph*{}
@@ -109,6 +110,93 @@ Le principe de ces algorithmes est assez simple. Pour chaque pixel codé, on att
 \subparagraph*{}
 Avec cette procédure simple mais astucieuse, on arrive à gommer beaucoup des erreurs de quantifications. L'idée du procédé n'est pas étrangère à notre première approche du problème car même si nous avons pensé en terme d'histogramme au début, ajouter du bruit revient à casser la redondance des zones constantes et donc à donner un aspect plus contraster et moins bloc de couleurs dans les zones unis, les zones hautes-fréquences ne faisant pas ressortir le grain du bruit.
 
-\subsection*{Résultats}
+\subsubsection*{Résultats}
+
+\section*{Résolution par étude de la fonction de répartition}
+\paragraph*{}
+Une approche plus en lien avec le papier expliquant la construction de la méthode de tri et d'ordonnancement est de s'intéresser à la fonction de répartition de l'image. Le code de base fournit une fonction pour obtenir un histogramme cible à partir d'une gaussienne. Dans le cas de l'image du bungalow \ref {fig:bungalow}, le résultat est très bon. En adaptant les bornes $L$ et $R$ de la fonction, on peut trouver de bons résultats pour des images dont la fonction de répartition est relativement simple (aucun point d'inflexion, allure d'une fonction de répartition d'une gaussienne, comportement très régulier...).La figure \ref{fig:histograms} illustre ce constat. Il suffit de voir le résultat sur l'image "Malta" \ref{fig:malta} où on n'aperçoit plus du tout les "large pixels" une fois les bons paramètres $L$ et $R$ trouvés ($L = 0.2$, $R = 0.5$).
+
+\begin{figure}[!hbt]
+\centering
+\begin{minipage}{0.5\textwidth}
+\centering
+\includegraphics[width=0.77\textwidth]{../pictures/bungalow.png}
+\end{minipage}%
+\begin{minipage}{0.5\textwidth}
+\centering
+\includegraphics[width=0.98\textwidth]{images/p3_bungalow_xx.jpg}
+\end{minipage}
+\caption{\textit{Cas où tout se passe bien, celui de l'image de bungalow.}}
+\label{fig:bungalow}
+\end{figure}
+
+\begin{figure}[!hbt]
+\centering
+\begin{minipage}{0.33\textwidth}
+\centering
+\includegraphics[width=0.77\textwidth]{../pictures/malta.jpg}
+\end{minipage}%
+\begin{minipage}{0.33\textwidth}
+\centering
+\includegraphics[width=0.98\textwidth]{images/im_xx.jpg}
+\end{minipage}%
+\begin{minipage}{0.33\textwidth}
+\centering
+\includegraphics[width=0.98\textwidth]{images/p3_malta_xx.jpg}
+\end{minipage}
+\caption{\textit{A gauche, l'image de départ, au milieu, l'image obtenue avec une gaussienne répartissant mal les pixels et à droite image obtenue avec un choix de gaussienne plus judicieux qui distribue plus de pixels dans les zones clairs pour améliorer l'allure du dégradé.}}
+\label{fig:malta}
+\end{figure}
+
+\begin{figure}[!hbt]
+\centering
+\begin{minipage}{0.25\textwidth}
+\centering
+\includegraphics[width=0.98\textwidth]{images/p3_bungalow_hist.jpg}
+\end{minipage}%
+\begin{minipage}{0.25\textwidth}
+\centering
+\includegraphics[width=0.98\textwidth]{images/p3_bungalow_cumsum.jpg}
+\end{minipage}%
+\begin{minipage}{0.25\textwidth}
+\centering
+\includegraphics[width=0.98\textwidth]{images/p3_malta_hist.jpg}
+\end{minipage}%
+\begin{minipage}{0.25\textwidth}
+\centering
+\includegraphics[width=0.98\textwidth]{images/p3_malta_cumsum.jpg}
+\end{minipage}
+\caption{\textit{A gauche, histogrammes et histogrammes cumulés pour la photo du bungalow et à droite, la même chose pour la photo de Malte. Dans le cas du bungalow, on trouve un histogramme qui permet une spécification exacte comme expliqué dans l'article. Dans le cas de Malte, on trouve un fonction approché, mais qui donne un résultat très satisfaisant.}}
+\label{fig:histograms}
+\end{figure}
+
+\paragraph*{}
+Pour d'autres images où la répartition du contraste est beaucoup plus localisé en plusieurs clusters de niveaux de gris (pour l'image noir et blanc correspondant), la modélisation par une gaussienne designée à la main est beaucoup plus délicate comme le montre la figure \ref{fig:birds}. On remarque sur l'histogramme cumulé qu'il y a effectivement deux paliés atteints lorsqu'on tape un pic dans l'histogramme. Dans ces conditions, une approximation gaussienne est vraiment grossière. On peut imaginer alors trouver des fonctions plus compliquées qui régularisent l'histogramme cumulé pour éviter les problèmes de sauts brusques dans la répartition. Il faut toutefois ne pas trouver une fonction trop régulière car sinon on risque d'allouer des pixels trop de pixels clairs pour le fond par exemple. Dans le cas de la figure \ref{fig:histograms}, le choix de la gaussienne colle assez bien à l'histogramme cumulé de la photographie de Malte ce qui explique une image de sortie assez harmonieuse.
+\subparagraph*{}
+Le but du jeu est alors de trouver des fonctions modélisant plus finement l'histogramme de départ.
+
+\begin{figure}[!hbt]
+\centering
+\begin{minipage}{0.25\textwidth}
+\centering
+\includegraphics[width=0.77\textwidth]{../pictures/birds.jpg}
+\end{minipage}%
+\begin{minipage}{0.25\textwidth}
+\centering
+\includegraphics[width=0.98\textwidth]{images/p3_birds_xx.jpg}
+\end{minipage}%
+\begin{minipage}{0.25\textwidth}
+\centering
+\includegraphics[width=0.98\textwidth]{images/p3_birds_hist.jpg}
+\end{minipage}%
+\begin{minipage}{0.25\textwidth}
+\centering
+\includegraphics[width=0.98\textwidth]{images/p3_birds_cumsum.jpg}
+\end{minipage}
+\caption{\textit{De gauche à droite: l'image originale, l'image "améliorée", l'histogramme de l'image de départ et la fonction cible et les fonctions de répartition associées.On remarque que le bord supérieur droit est moins sombre dans la dernière image, conséquence de l'allocation des pixels en faveur des zones claires.}}
+\label{fig:birds}
+\end{figure}
+
+
 
 \end{document}
