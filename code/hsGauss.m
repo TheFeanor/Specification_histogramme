@@ -5,8 +5,8 @@ function h = hsGauss(L,R,B);
 % L - left  <= 1
 % R - right <= 1
 
-if nargin<3;B=8;  end
-m=2^B-1;
+if nargin<3;B=8; m=2^B-1;end
+
 if L==1 % R<1
     if R==0; R=eps;end
     s=-m*m/log(R);

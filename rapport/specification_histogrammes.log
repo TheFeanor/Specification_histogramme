@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.24)  26 DEC 2016 23:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.24)  28 DEC 2016 16:32
 entering extended mode
 **./specification_histogrammes.tex
 (specification_histogrammes.tex
@@ -774,58 +774,60 @@ Package pdftex.def Info: images/p3_malta_cumsum.jpg used on input line 167.
 File: ../pictures/birds.jpg Graphic file (type jpg)
 
 <use ../pictures/birds.jpg>
-Package pdftex.def Info: ../pictures/birds.jpg used on input line 182.
+Package pdftex.def Info: ../pictures/birds.jpg used on input line 181.
 (pdftex.def)             Requested size: 96.34369pt x 72.24042pt.
 
 <images/p3_birds_xx.jpg, id=44, 562.1pt x 421.575pt>
 File: images/p3_birds_xx.jpg Graphic file (type jpg)
 
 <use images/p3_birds_xx.jpg>
-Package pdftex.def Info: images/p3_birds_xx.jpg used on input line 186.
+Package pdftex.def Info: images/p3_birds_xx.jpg used on input line 185.
 (pdftex.def)             Requested size: 122.61803pt x 91.96199pt.
 
 <images/p3_birds_hist.jpg, id=45, 562.1pt x 421.575pt>
 File: images/p3_birds_hist.jpg Graphic file (type jpg)
 
 <use images/p3_birds_hist.jpg>
-Package pdftex.def Info: images/p3_birds_hist.jpg used on input line 190.
+Package pdftex.def Info: images/p3_birds_hist.jpg used on input line 189.
 (pdftex.def)             Requested size: 122.61803pt x 91.96199pt.
 
 <images/p3_birds_cumsum.jpg, id=46, 562.1pt x 421.575pt>
 File: images/p3_birds_cumsum.jpg Graphic file (type jpg)
 
 <use images/p3_birds_cumsum.jpg>
-Package pdftex.def Info: images/p3_birds_cumsum.jpg used on input line 194.
+Package pdftex.def Info: images/p3_birds_cumsum.jpg used on input line 193.
 (pdftex.def)             Requested size: 122.61803pt x 91.96199pt.
  [5 <../pictures/bungalow.png (PNG copy)> <./images/p3_bungalow_xx.jpg>] [6 <..
 /pictures/malta.jpg> <./images/p3_malta_xx.jpg> <./images/p3_bungalow_hist.jpg>
  <./images/p3_bungalow_cumsum.jpg> <./images/p3_malta_hist.jpg> <./images/p3_ma
 lta_cumsum.jpg> <../pictures/birds.jpg> <./images/p3_birds_xx.jpg> <./images/p3
-_birds_hist.jpg> <./images/p3_birds_cumsum.jpg>] (specification_histogrammes.au
-x) ) 
+_birds_hist.jpg> <./images/p3_birds_cumsum.jpg>] [7] (specification_histogramme
+s.aux) ) 
 Here is how much of TeX's memory you used:
  5620 strings out of 493333
  79070 string characters out of 3139196
- 150238 words of memory out of 3000000
+ 151238 words of memory out of 3000000
  9033 multiletter control sequences out of 15000+200000
  13702 words of font info for 53 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,7n,43p,1280b,306s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmmi9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on specification_histogrammes.pdf (6 pages, 3815344 bytes).
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmmi9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmti10.pfb>
+Output written on specification_histogrammes.pdf (7 pages, 3836010 bytes).
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
+ 106 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  101 words of extra memory for PDF output out of 10000 (max. 10000000)
 

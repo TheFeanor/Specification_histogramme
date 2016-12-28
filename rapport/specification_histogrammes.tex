@@ -171,9 +171,8 @@ Une approche plus en lien avec le papier expliquant la construction de la métho
 \end{figure}
 
 \paragraph*{}
-Pour d'autres images où la répartition du contraste est beaucoup plus localisé en plusieurs clusters de niveaux de gris (pour l'image noir et blanc correspondant), la modélisation par une gaussienne designée à la main est beaucoup plus délicate comme le montre la figure \ref{fig:birds}. On remarque sur l'histogramme cumulé qu'il y a effectivement deux paliés atteints lorsqu'on tape un pic dans l'histogramme. Dans ces conditions, une approximation gaussienne est vraiment grossière. On peut imaginer alors trouver des fonctions plus compliquées qui régularisent l'histogramme cumulé pour éviter les problèmes de sauts brusques dans la répartition. Il faut toutefois ne pas trouver une fonction trop régulière car sinon on risque d'allouer des pixels trop de pixels clairs pour le fond par exemple. Dans le cas de la figure \ref{fig:histograms}, le choix de la gaussienne colle assez bien à l'histogramme cumulé de la photographie de Malte ce qui explique une image de sortie assez harmonieuse.
-\subparagraph*{}
-Le but du jeu est alors de trouver des fonctions modélisant plus finement l'histogramme de départ.
+Pour d'autres images où la répartition du contraste est beaucoup plus localisé en plusieurs clusters de niveaux de gris (pour l'image noir et blanc correspondant), la modélisation par une gaussienne designée à la main est beaucoup plus délicate comme le montre la figure \ref{fig:birds}. On remarque sur l'histogramme cumulé qu'il y a effectivement deux palliés atteints lorsqu'on tape un pic dans l'histogramme. Dans ces conditions, une approximation gaussienne est vraiment grossière. On peut imaginer alors trouver des fonctions plus compliquées qui régularisent l'histogramme cumulé pour éviter les problèmes de sauts brusques dans la répartition. Il faut toutefois ne pas trouver une fonction trop régulière car sinon on risque d'allouer des pixels trop de pixels clairs pour le fond par exemple. Dans le cas de la figure \ref{fig:histograms}, le choix de la gaussienne colle assez bien à l'histogramme cumulé de la photographie de Malte ce qui explique une image de sortie assez harmonieuse.
+
 
 \begin{figure}[!hbt]
 \centering
@@ -197,6 +196,16 @@ Le but du jeu est alors de trouver des fonctions modélisant plus finement l'his
 \label{fig:birds}
 \end{figure}
 
-
+\paragraph*{}
+Le but du jeu est alors de trouver des fonctions modélisant plus finement l'histogramme de départ. LA première idée est donc de trouver la meilleure fonction gaussienne générée par la routine hsGauss.m qui permet de coller au mieux à l'histogramme de départ tout en distribuant des pixels sur toute l'amplitude de niveaux de gris allant de 0 à 255. Il faut donc jouer sur les paramètres $R$ et $L$ qui définissent la gaussienne cible. On tombe sur un problème de "curve fitting" qui peut s'écrire (h désigne l'histogramme de départ et g la gaussienne obtenue par hsGauss):
+\begin{equation}
+\min_{(L, R)} ||h - g(L, R)||^2
+\end{equation} 
+Comme $L$ et $R$ sont compris entre 0 et 1, on doit ajouter quatre contraintes inégalités au problème. Si on pose $u=(L,R)$, alors on a $h_1(u) = -L$, $h_2(u) = L-1$, $h_3(u) = -R$ et $h_4(u) = R-1$. Le problème s'écrit alors avec les $\lambda_i$ des réels positifs:
+\begin{equation}
+\min_{u} ||h - g(u)||^2 + \sum_{i=1}^4 \lambda_i h_i(u)
+\end{equation} 
+\paragraph*{}
+On a réussi à poser correctement le problème sous la forme d'un problème d'optimisation quadratique sous contraintes tout ce qu'il y a de plus classique. Un tel problème peut se résoudre par la méthode d'Uzawa par exemple.
 
 \end{document}
