@@ -62,7 +62,7 @@ imshow(im_w_lms, []);
 %% Sliced optimal transport
 X = rand(20,3);
 Y = rand(20,3);
-Z = transport3D(X,Y,5000,0.01);
+Z = transport3D(X,Y,5000,0.01,'a');
 
 scatter3(X(:,1),X(:,2),X(:,3),'+');  % points of X are represented as +
 hold on;
@@ -79,7 +79,7 @@ v = v(1:4:nr,1:4:nc,:);
 X = reshape(u,nr*nc,3);
 Y = reshape(v,nr*nc,3);
 
-Z = transport3D(X,Y,1000,0.01);
+Z = transport3D(X,Y,1000,0.01,'a');
 w = reshape(Z,nr,nc,3);
 w = min(max(w,0),255);
 im_w = uint8(w);

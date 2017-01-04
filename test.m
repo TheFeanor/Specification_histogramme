@@ -11,7 +11,7 @@ h=hist(I(:),256); h=h/numel(I);
 %figure;
 %bar([0:1:255],h);xlim([0,255])
 
-L=1; R=0.2; 
+L=0.2; R=0.2; 
 idx = order(I);
 
 H = hsGauss(L,R); 

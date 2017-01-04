@@ -1,3 +1,5 @@
+% ajout de bruit pour lisser les histogrammes et dans le but de faire du
+% dithering
 close all; clear all; clc
 
 name='book';
