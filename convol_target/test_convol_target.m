@@ -1,12 +1,17 @@
-function [II, hII] = convol_target(name, std, ratio)
-%Cette fonction sert à obtenir une image à partir de la  moyenne pondérée
-%par ratio d'un histogramme de bruit qui lisse l'histogramme de départ
-%et un histogramme type gaussien qui étale les pixels
-    close all; clear all;
-    xo = readimage('malta');
+cd ../code;
+addpath('../convol_target/');
+name = 'Malta';
+std = 8; % écart-type du bruit
+% ratio*hb + (1-ratio) * hg
+%hb :hist bruit, hg : hist gaussien
+ratio = 0.90; 
+
+%[I, h] = convol_target(name, std, ratio);
+
+%close all; clear all;
+    xo = readimage('Malta');
     % see the image
-    figure; im(xo)
-    figure; imshow(uint8(xo), []); title('Image de départ');
+    figure; im(xo);title('Image de départ');
     % color-to-gray
     Io=sum(xo,3)/3; im(Io);
 
@@ -25,21 +30,20 @@ function [II, hII] = convol_target(name, std, ratio)
     % target histogram
     % partie 'bruit'
     xx = I + std * randn(m,n);
-    hb = hist(xx(:), 256); hb =b/sum(hb);
+    hb = hist(xx(:), 256); hb =hb/sum(hb);
 
     % partie gaussienne
-    L=1; R=0.05 ;
+    L=1; R=0.2 ;
     hg = hsGauss(L,R);
-    hg = hg/ sum(hg);
+    hg = hg'/ sum(hg);
 
     % somme des deux
     H = ratio * hb + (1-ratio) * hg;
 
-    figure;
-    H=H/numel(I);
-    figure;
-    bar([0:1:255],h);xlim([0,255]);
-    hold on; plot(H/sum(H)); axis('tight')
+%     figure;
+%     H=H/numel(I);
+%     figure;
+%     bar([0:1:255],H);xlim([0,255]); axis('tight')
 
     % target intensity image
     [fx,~]=HistGrayMatch(H, m, n, idx);
@@ -47,8 +51,12 @@ function [II, hII] = convol_target(name, std, ratio)
     %figure;im(fx);
 
     % enhance the image
-    II = chm_mult(xo,fx) ;figure;  im(II);title('Image finale');
-
+    II = chm_mult(xo,fx) ;figure;  im(II);title(sprintf('Image finale, ratio: %1.1d, std: %2.0d', ratio, std));
+    
+    figure;
     hII=hist(II(:),256); hII=hII/sum(hII);title('Histogramme final')
     bar([0:1:255],hII);xlim([0,255]);
-end
+
+    %% ajouter des pixels aux zones pauvres
+    
+    
