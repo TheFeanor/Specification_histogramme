@@ -1,12 +1,14 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.24)  28 DEC 2016 16:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.1.1)  5 MAR 2017 13:39
 entering extended mode
-**./specification_histogrammes.tex
-(specification_histogrammes.tex
-LaTeX2e <2016/03/31> patch level 3
-Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**specification_histogrammes.tex
+(./specification_histogrammes.tex
+LaTeX2e <2016/02/01>
+Babel <3.9q> and hyphenation patterns for 5 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -21,20 +23,20 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
-File: utf8.def 2016/02/28 v1.1s UTF-8 support for inputenc
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2015/12/03 v1.1r UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
-File: t1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -246,15 +248,11 @@ File: t1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
    defining Unicode char U+0219 (decimal 537)
    defining Unicode char U+021A (decimal 538)
    defining Unicode char U+021B (decimal 539)
-   defining Unicode char U+1E02 (decimal 7682)
-   defining Unicode char U+1E03 (decimal 7683)
+   defining Unicode char U+01E02 (decimal 7682)
+   defining Unicode char U+01E03 (decimal 7683)
    defining Unicode char U+200C (decimal 8204)
-   defining Unicode char U+2010 (decimal 8208)
-   defining Unicode char U+2011 (decimal 8209)
-   defining Unicode char U+2012 (decimal 8210)
    defining Unicode char U+2013 (decimal 8211)
    defining Unicode char U+2014 (decimal 8212)
-   defining Unicode char U+2015 (decimal 8213)
    defining Unicode char U+2018 (decimal 8216)
    defining Unicode char U+2019 (decimal 8217)
    defining Unicode char U+201A (decimal 8218)
@@ -270,8 +268,8 @@ File: t1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
-File: ot1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -311,8 +309,8 @@ File: ot1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
-File: omsenc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
+(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
    defining Unicode char U+00B7 (decimal 183)
@@ -335,14 +333,14 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip43
 \bibsep=\skip44
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count87
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\nomencl\nomencl.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/nomencl/nomencl.sty
 Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
 \nomlabelwidth=\dimen103
 \nom@tempdim=\dimen104
@@ -353,21 +351,21 @@ Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
 
 
 Writing nomenclature file specification_histogrammes.nlo
-("C:\Program Files\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty"
-Package: etoolbox 2016/12/01 v2.2b e-TeX tools for LaTeX (JAW)
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count88
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\caption\subcaption.sty"
-Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2016/02/20 v1.1-142 Sub-captions (AR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
-Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
@@ -384,35 +382,35 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \c@subfigure=\count90
 \c@subtable=\count91
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
-Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 99.
+Package graphics Info: Driver file: pdftex.def on input line 95.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
-File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count92
 ))
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\enumitem\enumitem.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \labelindent=\skip46
 \enit@outerparindent=\dimen114
@@ -420,8 +418,7 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@inbox=\box26
 \enitdp@description=\count93
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
-Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip47
 \f@ncyO@elh=\skip48
 \f@ncyO@erh=\skip49
@@ -432,25 +429,25 @@ Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
 \f@ncyO@olf=\skip54
 \f@ncyO@orf=\skip55
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
-Package: amsmath 2016/06/28 v2.15d AMS math features
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/03/03 v2.15a AMS math features
 \@mathmargin=\skip56
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks18
 \ex@=\dimen115
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen116
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
-Package: amsopn 2016/03/08 v2.02 operator names
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count94
 LaTeX Info: Redefining \frac on input line 199.
@@ -465,8 +462,8 @@ LaTeX Info: Redefining \cdots on input line 518.
 \Mathstrutbox@=\box27
 \strutbox@=\box28
 \big@size=\dimen117
-LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
 \macc@depth=\count99
 \c@MaxMatrixCols=\count100
 \dotsspace@=\muskip10
@@ -487,20 +484,20 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
 \multlinegap=\skip57
 \multlinetaggap=\skip58
 \mathdisplay@stack=\toks22
-LaTeX Info: Redefining \[ on input line 2739.
-LaTeX Info: Redefining \] on input line 2740.
+LaTeX Info: Redefining \[ on input line 2735.
+LaTeX Info: Redefining \] on input line 2736.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\amscls\amsthm.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2015/03/04 v2.20.2
 \thm@style=\toks23
 \thm@bodyfont=\toks24
@@ -512,17 +509,21 @@ Package: amsthm 2015/03/04 v2.20.2
 \thm@headsep=\skip61
 \dth@everypar=\toks28
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
-Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
-Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count106
@@ -537,27 +538,26 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen130
 \Gm@layoutvoffset=\dimen131
 \Gm@dimlist=\toks29
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
-(specification_histogrammes.aux)
+)
+(./specification_histogrammes.aux)
 \openout1 = `specification_histogrammes.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count109
 \scratchdimen=\dimen132
@@ -570,12 +570,12 @@ Package caption Info: End \AtBeginDocument code.
 \MPnumerator=\count113
 \makeMPintoPDFobject=\count114
 \everyMPtoPDFconversion=\toks31
-) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
-Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
 Package pdftexcmds Info: LuaTeX not detected.
@@ -583,35 +583,37 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
 Package grfext Info: Graphics extension search list:
 (grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
-)
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -646,188 +648,393 @@ G,.JBIG2,.JB2,.eps]
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 20.
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+LaTeX Font Info:    Try loading font information for U+msa on input line 21.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 20.
+LaTeX Font Info:    Try loading font information for U+msb on input line 21.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 <../pictures/brasil.jpg, id=1, 2280.52pt x 1710.39pt>
 File: ../pictures/brasil.jpg Graphic file (type jpg)
 
 <use ../pictures/brasil.jpg>
-Package pdftex.def Info: ../pictures/brasil.jpg used on input line 37.
+Package pdftex.def Info: ../pictures/brasil.jpg used on input line 38.
 (pdftex.def)             Requested size: 187.68149pt x 140.74875pt.
  <images/p1_brasil.jpg, id=2, 562.1pt x 421.575pt>
 File: images/p1_brasil.jpg Graphic file (type jpg)
 
 <use images/p1_brasil.jpg>
-Package pdftex.def Info: images/p1_brasil.jpg used on input line 41.
+Package pdftex.def Info: images/p1_brasil.jpg used on input line 42.
 (pdftex.def)             Requested size: 245.23607pt x 183.92398pt.
  <images/im_x.jpg, id=3, 562.1pt x 421.575pt>
 File: images/im_x.jpg Graphic file (type jpg)
 
 <use images/im_x.jpg>
-Package pdftex.def Info: images/im_x.jpg used on input line 51.
+Package pdftex.def Info: images/im_x.jpg used on input line 52.
 (pdftex.def)             Requested size: 245.23607pt x 183.92398pt.
  <images/im_xx.jpg, id=4, 562.1pt x 421.575pt>
 File: images/im_xx.jpg Graphic file (type jpg)
 
 <use images/im_xx.jpg>
-Package pdftex.def Info: images/im_xx.jpg used on input line 55.
+Package pdftex.def Info: images/im_xx.jpg used on input line 56.
 (pdftex.def)             Requested size: 245.23607pt x 183.92398pt.
  <images/hist_x.jpg, id=5, 562.1pt x 421.575pt>
 File: images/hist_x.jpg Graphic file (type jpg)
 
 <use images/hist_x.jpg>
-Package pdftex.def Info: images/hist_x.jpg used on input line 65.
+Package pdftex.def Info: images/hist_x.jpg used on input line 66.
 (pdftex.def)             Requested size: 161.8567pt x 121.39163pt.
 
 <images/p1_hist_cible_malte.jpg, id=6, 562.1pt x 421.575pt>
 File: images/p1_hist_cible_malte.jpg Graphic file (type jpg)
 
 <use images/p1_hist_cible_malte.jpg>
-Package pdftex.def Info: images/p1_hist_cible_malte.jpg used on input line 69.
+Package pdftex.def Info: images/p1_hist_cible_malte.jpg used on input line 70.
 (pdftex.def)             Requested size: 161.8567pt x 121.39163pt.
 
 <images/hist_xx.jpg, id=7, 562.1pt x 421.575pt>
 File: images/hist_xx.jpg Graphic file (type jpg)
  <use images/hist_xx.jpg>
-Package pdftex.def Info: images/hist_xx.jpg used on input line 73.
+Package pdftex.def Info: images/hist_xx.jpg used on input line 74.
 (pdftex.def)             Requested size: 146.99286pt x 110.24374pt.
 
 [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-<images/p2_tilling.jpg, id=19, 562.1pt x 421.575pt>
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 <../pictures/brasil.jpg
+> <./images/p1_brasil.jpg> <./images/im_x.jpg> <./images/im_xx.jpg> <./images/h
+ist_x.jpg> <./images/p1_hist_cible_malte.jpg> <./images/hist_xx.jpg>]
+<images/p2_tilling.jpg, id=24, 562.1pt x 421.575pt>
 File: images/p2_tilling.jpg Graphic file (type jpg)
 
 <use images/p2_tilling.jpg>
-Package pdftex.def Info: images/p2_tilling.jpg used on input line 88.
+Package pdftex.def Info: images/p2_tilling.jpg used on input line 90.
 (pdftex.def)             Requested size: 421.57397pt x 316.18047pt.
- [2 <../pictures/brasil.jpg> <./images/p1_brasil.jpg> <./images/im_x.jpg> <./im
-ages/im_xx.jpg>] [3 <./images/hist_x.jpg> <./images/p1_hist_cible_malte.jpg> <.
-/images/hist_xx.jpg>] [4 <./images/p2_tilling.jpg>]
-<../pictures/bungalow.png, id=35, 1027.84pt x 662.475pt>
+ [3
+
+] [4 <./images/p2_tilling.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
+
+ []
+
+[5] <../pictures/bungalow.png, id=39, 1027.84pt x 662.475pt>
 File: ../pictures/bungalow.png Graphic file (type png)
 
 <use ../pictures/bungalow.png>
-Package pdftex.def Info: ../pictures/bungalow.png used on input line 123.
+Package pdftex.def Info: ../pictures/bungalow.png used on input line 121.
 (pdftex.def)             Requested size: 192.6874pt x 124.19354pt.
 
-<images/p3_bungalow_xx.jpg, id=36, 562.1pt x 421.575pt>
+<images/p3_bungalow_xx.jpg, id=40, 562.1pt x 421.575pt>
 File: images/p3_bungalow_xx.jpg Graphic file (type jpg)
 
 <use images/p3_bungalow_xx.jpg>
-Package pdftex.def Info: images/p3_bungalow_xx.jpg used on input line 127.
+Package pdftex.def Info: images/p3_bungalow_xx.jpg used on input line 125.
 (pdftex.def)             Requested size: 245.23607pt x 183.92398pt.
 
-<../pictures/malta.jpg, id=37, 963.6pt x 722.7pt>
-File: ../pictures/malta.jpg Graphic file (type jpg)
- <use ../pictures/malta.jpg>
-Package pdftex.def Info: ../pictures/malta.jpg used on input line 137.
+<../pictures/Malta.JPG, id=41, 963.6pt x 722.7pt>
+File: ../pictures/Malta.JPG Graphic file (type jpg)
+ <use ../pictures/Malta.JPG>
+Package pdftex.def Info: ../pictures/Malta.JPG used on input line 135.
 (pdftex.def)             Requested size: 127.17438pt x 95.37683pt.
 File: images/im_xx.jpg Graphic file (type jpg)
 
 <use images/im_xx.jpg>
-Package pdftex.def Info: images/im_xx.jpg used on input line 141.
+Package pdftex.def Info: images/im_xx.jpg used on input line 139.
 (pdftex.def)             Requested size: 161.8567pt x 121.39163pt.
- <images/p3_malta_xx.jpg, id=38, 562.1pt x 421.575pt>
+ <images/p3_malta_xx.jpg, id=42, 562.1pt x 421.575pt>
 File: images/p3_malta_xx.jpg Graphic file (type jpg)
 
 <use images/p3_malta_xx.jpg>
-Package pdftex.def Info: images/p3_malta_xx.jpg used on input line 145.
+Package pdftex.def Info: images/p3_malta_xx.jpg used on input line 143.
 (pdftex.def)             Requested size: 161.8567pt x 121.39163pt.
 
-<images/p3_bungalow_hist.jpg, id=39, 562.1pt x 421.575pt>
+<images/p3_bungalow_hist.jpg, id=43, 562.1pt x 421.575pt>
 File: images/p3_bungalow_hist.jpg Graphic file (type jpg)
 
 <use images/p3_bungalow_hist.jpg>
-Package pdftex.def Info: images/p3_bungalow_hist.jpg used on input line 155.
+Package pdftex.def Info: images/p3_bungalow_hist.jpg used on input line 153.
 (pdftex.def)             Requested size: 122.61803pt x 91.96199pt.
 
-<images/p3_bungalow_cumsum.jpg, id=40, 562.1pt x 421.575pt>
+<images/p3_bungalow_cumsum.jpg, id=44, 562.1pt x 421.575pt>
 File: images/p3_bungalow_cumsum.jpg Graphic file (type jpg)
 
 <use images/p3_bungalow_cumsum.jpg>
-Package pdftex.def Info: images/p3_bungalow_cumsum.jpg used on input line 159.
+Package pdftex.def Info: images/p3_bungalow_cumsum.jpg used on input line 157.
 (pdftex.def)             Requested size: 122.61803pt x 91.96199pt.
 
-<images/p3_malta_hist.jpg, id=41, 562.1pt x 421.575pt>
+<images/p3_malta_hist.jpg, id=45, 562.1pt x 421.575pt>
 File: images/p3_malta_hist.jpg Graphic file (type jpg)
 
 <use images/p3_malta_hist.jpg>
-Package pdftex.def Info: images/p3_malta_hist.jpg used on input line 163.
+Package pdftex.def Info: images/p3_malta_hist.jpg used on input line 161.
 (pdftex.def)             Requested size: 122.61803pt x 91.96199pt.
 
-<images/p3_malta_cumsum.jpg, id=42, 562.1pt x 421.575pt>
+<images/p3_malta_cumsum.jpg, id=46, 562.1pt x 421.575pt>
 File: images/p3_malta_cumsum.jpg Graphic file (type jpg)
 
 <use images/p3_malta_cumsum.jpg>
-Package pdftex.def Info: images/p3_malta_cumsum.jpg used on input line 167.
+Package pdftex.def Info: images/p3_malta_cumsum.jpg used on input line 165.
 (pdftex.def)             Requested size: 122.61803pt x 91.96199pt.
-
-<../pictures/birds.jpg, id=43, 2280.52pt x 1710.39pt>
+ [6 <../pictures/bungalow.png (PNG copy)> <./images/p3_bungalow_xx.jpg> <../pic
+tures/Malta.JPG> <./images/p3_malta_xx.jpg>]
+[7 <./images/p3_bungalow_hist.jpg> <./images/p3_bungalow_cumsum.jpg> <./images/
+p3_malta_hist.jpg> <./images/p3_malta_cumsum.jpg>]
+<../pictures/birds.jpg, id=56, 2280.52pt x 1710.39pt>
 File: ../pictures/birds.jpg Graphic file (type jpg)
 
 <use ../pictures/birds.jpg>
-Package pdftex.def Info: ../pictures/birds.jpg used on input line 181.
+Package pdftex.def Info: ../pictures/birds.jpg used on input line 191.
 (pdftex.def)             Requested size: 96.34369pt x 72.24042pt.
 
-<images/p3_birds_xx.jpg, id=44, 562.1pt x 421.575pt>
+<images/p3_birds_xx.jpg, id=57, 562.1pt x 421.575pt>
 File: images/p3_birds_xx.jpg Graphic file (type jpg)
 
 <use images/p3_birds_xx.jpg>
-Package pdftex.def Info: images/p3_birds_xx.jpg used on input line 185.
+Package pdftex.def Info: images/p3_birds_xx.jpg used on input line 195.
 (pdftex.def)             Requested size: 122.61803pt x 91.96199pt.
 
-<images/p3_birds_hist.jpg, id=45, 562.1pt x 421.575pt>
+<images/p3_birds_hist.jpg, id=58, 562.1pt x 421.575pt>
 File: images/p3_birds_hist.jpg Graphic file (type jpg)
 
 <use images/p3_birds_hist.jpg>
-Package pdftex.def Info: images/p3_birds_hist.jpg used on input line 189.
+Package pdftex.def Info: images/p3_birds_hist.jpg used on input line 199.
 (pdftex.def)             Requested size: 122.61803pt x 91.96199pt.
 
-<images/p3_birds_cumsum.jpg, id=46, 562.1pt x 421.575pt>
+<images/p3_birds_cumsum.jpg, id=59, 562.1pt x 421.575pt>
 File: images/p3_birds_cumsum.jpg Graphic file (type jpg)
 
 <use images/p3_birds_cumsum.jpg>
-Package pdftex.def Info: images/p3_birds_cumsum.jpg used on input line 193.
+Package pdftex.def Info: images/p3_birds_cumsum.jpg used on input line 203.
 (pdftex.def)             Requested size: 122.61803pt x 91.96199pt.
- [5 <../pictures/bungalow.png (PNG copy)> <./images/p3_bungalow_xx.jpg>] [6 <..
-/pictures/malta.jpg> <./images/p3_malta_xx.jpg> <./images/p3_bungalow_hist.jpg>
- <./images/p3_bungalow_cumsum.jpg> <./images/p3_malta_hist.jpg> <./images/p3_ma
-lta_cumsum.jpg> <../pictures/birds.jpg> <./images/p3_birds_xx.jpg> <./images/p3
-_birds_hist.jpg> <./images/p3_birds_cumsum.jpg>] [7] (specification_histogramme
-s.aux) ) 
+ [8 <../pictures/birds.jpg> <./images/p3_birds_xx.jpg> <./images/p3_birds_hist.
+jpg> <./images/p3_birds_cumsum.jpg>]
+<images/birds_tmr_hist.jpg, id=66, 562.1pt x 421.575pt>
+File: images/birds_tmr_hist.jpg Graphic file (type jpg)
+
+<use images/birds_tmr_hist.jpg>
+Package pdftex.def Info: images/birds_tmr_hist.jpg used on input line 226.
+(pdftex.def)             Requested size: 252.94266pt x 189.70699pt.
+
+Overfull \hbox (2.70067pt too wide) in paragraph at lines 226--227
+[][] 
+ []
+
+<images/cum_hist_bird.jpg, id=67, 562.1pt x 421.575pt>
+File: images/cum_hist_bird.jpg Graphic file (type jpg)
+
+<use images/cum_hist_bird.jpg>
+Package pdftex.def Info: images/cum_hist_bird.jpg used on input line 229.
+(pdftex.def)             Requested size: 252.94266pt x 189.70699pt.
+
+Overfull \hbox (2.70067pt too wide) in paragraph at lines 229--230
+[][] 
+ []
+
+File: ../pictures/birds.jpg Graphic file (type jpg)
+<use ../pictures/birds.jpg>
+Package pdftex.def Info: ../pictures/birds.jpg used on input line 243.
+(pdftex.def)             Requested size: 200.19435pt x 150.14418pt.
+ <images/birds_tmr.jpg, id=68, 562.1pt x 421.575pt>
+File: images/birds_tmr.jpg Graphic file (type jpg)
+
+<use images/birds_tmr.jpg>
+Package pdftex.def Info: images/birds_tmr.jpg used on input line 247.
+(pdftex.def)             Requested size: 250.24199pt x 187.68068pt.
+
+
+LaTeX Warning: Reference `fig:malta_sigma' on page 9 undefined on input line 25
+3.
+
+<images/malta_sigma_8.jpg, id=69, 562.1pt x 421.575pt>
+File: images/malta_sigma_8.jpg Graphic file (type jpg)
+
+<use images/malta_sigma_8.jpg>
+Package pdftex.def Info: images/malta_sigma_8.jpg used on input line 259.
+(pdftex.def)             Requested size: 168.6313pt x 126.47346pt.
+
+Overfull \hbox (3.47067pt too wide) in paragraph at lines 259--260
+ [][] 
+ []
+
+<images/malta_sigma_10.jpg, id=70, 562.1pt x 421.575pt>
+File: images/malta_sigma_10.jpg Graphic file (type jpg)
+
+<use images/malta_sigma_10.jpg>
+Package pdftex.def Info: images/malta_sigma_10.jpg used on input line 263.
+(pdftex.def)             Requested size: 168.6313pt x 126.47346pt.
+
+Overfull \hbox (3.47067pt too wide) in paragraph at lines 263--264
+ [][] 
+ []
+
+<images/malta_sigma_15.jpg, id=71, 562.1pt x 421.575pt>
+File: images/malta_sigma_15.jpg Graphic file (type jpg)
+
+<use images/malta_sigma_15.jpg>
+Package pdftex.def Info: images/malta_sigma_15.jpg used on input line 267.
+(pdftex.def)             Requested size: 168.6313pt x 126.47346pt.
+
+Overfull \hbox (3.47067pt too wide) in paragraph at lines 267--268
+ [][] 
+ []
+
+[9 <./images/birds_tmr_hist.jpg> <./images/cum_hist_bird.jpg>] [10 <./images/bi
+rds_tmr.jpg> <./images/malta_sigma_8.jpg> <./images/malta_sigma_10.jpg> <./imag
+es/malta_sigma_15.jpg>] (./specification_histogrammes.bbl) [11]
+<images/boat_conc_depart.jpg, id=81, 562.1pt x 421.575pt>
+File: images/boat_conc_depart.jpg Graphic file (type jpg)
+
+<use images/boat_conc_depart.jpg>
+Package pdftex.def Info: images/boat_conc_depart.jpg used on input line 292.
+(pdftex.def)             Requested size: 165.16063pt x 123.86823pt.
+
+<images/boat_conc_inter.jpg, id=82, 562.1pt x 421.575pt>
+File: images/boat_conc_inter.jpg Graphic file (type jpg)
+
+<use images/boat_conc_inter.jpg>
+Package pdftex.def Info: images/boat_conc_inter.jpg used on input line 297.
+(pdftex.def)             Requested size: 165.16063pt x 123.86823pt.
+
+<images/boat_conc_tmr.jpg, id=83, 562.1pt x 421.575pt>
+File: images/boat_conc_tmr.jpg Graphic file (type jpg)
+
+<use images/boat_conc_tmr.jpg>
+Package pdftex.def Info: images/boat_conc_tmr.jpg used on input line 302.
+(pdftex.def)             Requested size: 165.16063pt x 123.86823pt.
+
+<images/ferrari_conc_depart.jpg, id=84, 562.1pt x 421.575pt>
+File: images/ferrari_conc_depart.jpg Graphic file (type jpg)
+
+<use images/ferrari_conc_depart.jpg>
+Package pdftex.def Info: images/ferrari_conc_depart.jpg used on input line 311.
+
+(pdftex.def)             Requested size: 165.16063pt x 123.86823pt.
+
+<images/ferrari_conc_inter.jpg, id=85, 562.1pt x 421.575pt>
+File: images/ferrari_conc_inter.jpg Graphic file (type jpg)
+
+<use images/ferrari_conc_inter.jpg>
+Package pdftex.def Info: images/ferrari_conc_inter.jpg used on input line 316.
+(pdftex.def)             Requested size: 165.16063pt x 123.86823pt.
+
+<images/ferrari_conc_tmr.jpg, id=86, 562.1pt x 421.575pt>
+File: images/ferrari_conc_tmr.jpg Graphic file (type jpg)
+
+<use images/ferrari_conc_tmr.jpg>
+Package pdftex.def Info: images/ferrari_conc_tmr.jpg used on input line 321.
+(pdftex.def)             Requested size: 165.16063pt x 123.86823pt.
+
+<images/book_conc_depart.jpg, id=87, 562.1pt x 421.575pt>
+File: images/book_conc_depart.jpg Graphic file (type jpg)
+
+<use images/book_conc_depart.jpg>
+Package pdftex.def Info: images/book_conc_depart.jpg used on input line 330.
+(pdftex.def)             Requested size: 165.16063pt x 123.86823pt.
+
+<images/book_conc_inter.jpg, id=88, 562.1pt x 421.575pt>
+File: images/book_conc_inter.jpg Graphic file (type jpg)
+
+<use images/book_conc_inter.jpg>
+Package pdftex.def Info: images/book_conc_inter.jpg used on input line 335.
+(pdftex.def)             Requested size: 165.16063pt x 123.86823pt.
+
+<images/book_conc_tmr.jpg, id=89, 562.1pt x 421.575pt>
+File: images/book_conc_tmr.jpg Graphic file (type jpg)
+
+<use images/book_conc_tmr.jpg>
+Package pdftex.def Info: images/book_conc_tmr.jpg used on input line 340.
+(pdftex.def)             Requested size: 165.16063pt x 123.86823pt.
+
+<images/macau_conc_depart.jpg, id=90, 562.1pt x 421.575pt>
+File: images/macau_conc_depart.jpg Graphic file (type jpg)
+
+<use images/macau_conc_depart.jpg>
+Package pdftex.def Info: images/macau_conc_depart.jpg used on input line 349.
+(pdftex.def)             Requested size: 165.16063pt x 123.86823pt.
+
+<images/macau_conc_inter.jpg, id=91, 562.1pt x 421.575pt>
+File: images/macau_conc_inter.jpg Graphic file (type jpg)
+
+<use images/macau_conc_inter.jpg>
+Package pdftex.def Info: images/macau_conc_inter.jpg used on input line 354.
+(pdftex.def)             Requested size: 165.16063pt x 123.86823pt.
+
+<images/macau_conc_tmr.jpg, id=92, 562.1pt x 421.575pt>
+File: images/macau_conc_tmr.jpg Graphic file (type jpg)
+
+<use images/macau_conc_tmr.jpg>
+Package pdftex.def Info: images/macau_conc_tmr.jpg used on input line 359.
+(pdftex.def)             Requested size: 165.16063pt x 123.86823pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/sail_conc_depart.jpg, id=93, 562.1pt x 421.575pt>
+File: images/sail_conc_depart.jpg Graphic file (type jpg)
+
+<use images/sail_conc_depart.jpg>
+Package pdftex.def Info: images/sail_conc_depart.jpg used on input line 368.
+(pdftex.def)             Requested size: 165.16063pt x 123.86823pt.
+
+<images/sail_conc_inter.jpg, id=94, 562.1pt x 421.575pt>
+File: images/sail_conc_inter.jpg Graphic file (type jpg)
+
+<use images/sail_conc_inter.jpg>
+Package pdftex.def Info: images/sail_conc_inter.jpg used on input line 373.
+(pdftex.def)             Requested size: 165.16063pt x 123.86823pt.
+
+<images/sail_conc_tmr.jpg, id=95, 562.1pt x 421.575pt>
+File: images/sail_conc_tmr.jpg Graphic file (type jpg)
+
+<use images/sail_conc_tmr.jpg>
+Package pdftex.def Info: images/sail_conc_tmr.jpg used on input line 378.
+(pdftex.def)             Requested size: 165.16063pt x 123.86823pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[12 <./images/boat_conc_depart.jpg> <./images/boat_conc_inter.jpg> <./images/bo
+at_conc_tmr.jpg> <./images/ferrari_conc_depart.jpg> <./images/ferrari_conc_inte
+r.jpg> <./images/ferrari_conc_tmr.jpg> <./images/book_conc_depart.jpg> <./image
+s/book_conc_inter.jpg> <./images/book_conc_tmr.jpg>] [13 <./images/macau_conc_d
+epart.jpg> <./images/macau_conc_inter.jpg> <./images/macau_conc_tmr.jpg> <./ima
+ges/sail_conc_depart.jpg> <./images/sail_conc_inter.jpg> <./images/sail_conc_tm
+r.jpg>] (./specification_histogrammes.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 5620 strings out of 493333
- 79070 string characters out of 3139196
- 151238 words of memory out of 3000000
- 9033 multiletter control sequences out of 15000+200000
- 13702 words of font info for 53 fonts, out of 3000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 42i,7n,43p,1280b,306s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmmi9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmti10.pfb>
-Output written on specification_histogrammes.pdf (7 pages, 3836010 bytes).
+ 5734 strings out of 494910
+ 82473 string characters out of 6179837
+ 145843 words of memory out of 5000000
+ 8882 multiletter control sequences out of 15000+600000
+ 13702 words of font info for 53 fonts, out of 8000000 for 9000
+ 36 hyphenation exceptions out of 8191
+ 42i,8n,43p,1605b,343s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on specification_histogrammes.pdf (13 pages, 4423160 bytes).
 PDF statistics:
- 106 PDF objects out of 1000 (max. 8388607)
+ 160 PDF objects out of 1000 (max. 8388607)
+ 85 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 206 words of extra memory for PDF output out of 10000 (max. 10000000)
 

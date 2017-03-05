@@ -1,19 +1,52 @@
 \relax 
+\@writefile{toc}{\contentsline {section}{\numberline {1}Pr\IeC {\'e}sentation du probl\IeC {\`e}me de "large pixels"}{1}}
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces \textit  {Illustration de l'apparition de pixels nuisibles d\IeC {\^u}s \IeC {\`a} la r\IeC {\'e}-allocations de bits dans l'histogramme produisant une mauvaise quantification des couleurs.}\relax }}{2}}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{fig:p1_brasil}{{1}{2}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces \textit  {Image de d\IeC {\'e}part et son \IeC {\'e}quivalent apr\IeC {\`e}s sp\IeC {\'e}cification. On remarque qu'en haut \IeC {\`a} gauche, il y a des pixels apparents dans le ciel d\IeC {\^u}s \IeC {\`a} une mauvaise allocation des couleurs apr\IeC {\`e}s sp\IeC {\'e}cification d'histogramme.}\relax }}{2}}
 \newlabel{fig:im_x}{{2}{2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces \textit  {Gauche: histogramme de d\IeC {\'e}part, Milieu: forme de l'histogramme cible, Droite: histogramme obtenu apr\IeC {\`e}s application de la sp\IeC {\'e}cification par la routine order}\relax }}{3}}
-\newlabel{fig:im_xx}{{3}{3}}
-\@writefile{toc}{\contentsline {subparagraph}{}{3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces \textit  {Gauche: histogramme de d\IeC {\'e}part, Milieu: forme de l'histogramme cible, Droite: histogramme obtenu apr\IeC {\`e}s application de la sp\IeC {\'e}cification par la routine order}\relax }}{2}}
+\newlabel{fig:im_xx}{{3}{2}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Divers pistes}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Approche par tilling}{3}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces \textit  {Sans m\IeC {\^e}me se donner la peine de traiter l'image par un algorithme type midway pour unifier les couleurs, on aper\IeC {\c c}oit dans l'image en haut \IeC {\`a} droite que le ciel est un d\IeC {\'e}grad\IeC {\'e} qui ne prend pas en compte le ciel de l'imagette en haut \IeC {\`a} gauche. Pire encore, le ph\IeC {\'e}nom\IeC {\`e}ne de "large pixels" est encore plus accentu\IeC {\'e} car on a encore moins de bits \IeC {\`a} allouer aux zones claires ! M\IeC {\^e}me constat pour chacune des jonctions.}\relax }}{4}}
 \newlabel{fig:tilling}{{4}{4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces \textit  {Cas o\IeC {\`u} tout se passe bien, celui de l'image de bungalow.}\relax }}{5}}
-\newlabel{fig:bungalow}{{5}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}R\IeC {\'e}solution par ajout de bruit}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}M\IeC {\'e}thodes de dithering}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}R\IeC {\'e}solution par \IeC {\'e}tude de la fonction de r\IeC {\'e}partition}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces \textit  {Cas o\IeC {\`u} tout se passe bien, celui de l'image de bungalow.}\relax }}{6}}
+\newlabel{fig:bungalow}{{5}{6}}
 \@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces \textit  {A gauche, l'image de d\IeC {\'e}part, au milieu, l'image obtenue avec une gaussienne r\IeC {\'e}partissant mal les pixels et \IeC {\`a} droite image obtenue avec un choix de gaussienne plus judicieux qui distribue plus de pixels dans les zones clairs pour am\IeC {\'e}liorer l'allure du d\IeC {\'e}grad\IeC {\'e}.}\relax }}{6}}
 \newlabel{fig:malta}{{6}{6}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces \textit  {A gauche, histogrammes et histogrammes cumul\IeC {\'e}s pour la photo du bungalow et \IeC {\`a} droite, la m\IeC {\^e}me chose pour la photo de Malte. Dans le cas du bungalow, on trouve un histogramme qui permet une sp\IeC {\'e}cification exacte comme expliqu\IeC {\'e} dans l'article. Dans le cas de Malte, on trouve un fonction approch\IeC {\'e}, mais qui donne un r\IeC {\'e}sultat tr\IeC {\`e}s satisfaisant.}\relax }}{6}}
-\newlabel{fig:histograms}{{7}{6}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces \textit  {De gauche \IeC {\`a} droite: l'image originale, l'image "am\IeC {\'e}lior\IeC {\'e}e", l'histogramme de l'image de d\IeC {\'e}part et la fonction cible et les fonctions de r\IeC {\'e}partition associ\IeC {\'e}es.On remarque que le bord sup\IeC {\'e}rieur droit est moins sombre dans la derni\IeC {\`e}re image, cons\IeC {\'e}quence de l'allocation des pixels en faveur des zones claires.}\relax }}{6}}
-\newlabel{fig:birds}{{8}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces \textit  {A gauche, histogrammes et histogrammes cumul\IeC {\'e}s pour la photo du bungalow et \IeC {\`a} droite, la m\IeC {\^e}me chose pour la photo de Malte. Dans le cas du bungalow, on trouve un histogramme qui permet une sp\IeC {\'e}cification exacte comme expliqu\IeC {\'e} dans l'article. Dans le cas de Malte, on trouve un fonction approch\IeC {\'e}, mais qui donne un r\IeC {\'e}sultat tr\IeC {\`e}s satisfaisant.}\relax }}{7}}
+\newlabel{fig:histograms}{{7}{7}}
+\citation{rabin:hal-00505966}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces \textit  {De gauche \IeC {\`a} droite: l'image originale, l'image "am\IeC {\'e}lior\IeC {\'e}e", l'histogramme de l'image de d\IeC {\'e}part et la fonction cible et les fonctions de r\IeC {\'e}partition associ\IeC {\'e}es.On remarque que le bord sup\IeC {\'e}rieur droit est moins sombre dans la derni\IeC {\`e}re image, cons\IeC {\'e}quence de l'allocation des pixels en faveur des zones claires.}\relax }}{8}}
+\newlabel{fig:birds}{{8}{8}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Suppression des larges pixel par TMR}{8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}D\IeC {\'e}tection de pics et choix de la forme de l'histogramme cible}{8}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1}D\IeC {\'e}tection des pics}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces \textit  {Notre algorithme a reconnu deux pics et dessine l'histogramme cible comme \IeC {\'e}tant le maximum point par point des deux gaussiennes fitt\IeC {\'e}es sur chaque pic. En rouge, l'histogramme cumul\IeC {\'e} de d\IeC {\'e}part et en bleu notre nouvel histogramme.}\relax }}{9}}
+\newlabel{fig:choosehs}{{9}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces \textit  {A gauche, l'image modifi\IeC {\'e}e par l'algorithme de base, A droite, sa version corrig\IeC {\'e}e par notre algorithme m\IeC {\^e}lant curve fitting et TMR. On remarque bien que notre m\IeC {\'e}thode gomme tr\IeC {\`e}s bien les d\IeC {\'e}fauts visibles \IeC {\`a} gauche tout en respectant le ton neutre du ciel.}\relax }}{10}}
+\newlabel{fig:bird_tmr}{{10}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces \textit  {De gauche \IeC {\`a} droite, $\sigma $ vaut 0.8, 1 et 1.5. Le param\IeC {\`e}tre $\sigma $ est primordial pour obtenir un bon r\IeC {\'e}sultat.}\relax }}{10}}
+\bibstyle{plain}
+\bibdata{biblio}
+\bibcite{rabin:hal-00505966}{{1}{}{{}}{{}}}
+\providecommand\NAT@force@numbers{}\NAT@force@numbers
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Original\relax }}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Na\IeC {\"\i }f\relax }}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Le notre\relax }}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Original\relax }}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Na\IeC {\"\i }f\relax }}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Le notre\relax }}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Original\relax }}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces Na\IeC {\"\i }f\relax }}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces Le notre\relax }}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Original\relax }}{13}}
+\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces Na\IeC {\"\i }f\relax }}{13}}
+\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces Le notre\relax }}{13}}
+\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces Original\relax }}{13}}
+\@writefile{lof}{\contentsline {figure}{\numberline {25}{\ignorespaces Na\IeC {\"\i }f\relax }}{13}}
+\@writefile{lof}{\contentsline {figure}{\numberline {26}{\ignorespaces Le notre\relax }}{13}}
